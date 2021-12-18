@@ -11,5 +11,5 @@ app.get('/location/:id', (req, res) => {
     res.json({ background: 'orange' })
     })
 
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log('Connected to: ', PORT));
