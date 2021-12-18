@@ -6,6 +6,10 @@ app.use(cors());
 
 app.use( express.json() );
 
+app.get('/', function(req, res) {
+    res.send('hello world');
+  });
+
 app.get('/location/:id', (req, res) => {
     console.log(req.params.id);
     res.json({ background: 'orange' })
