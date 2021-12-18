@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
 
 app.get('/location/:id', (req, res) => {
     console.log(req.params.id);
-    res.json({ background: 'blue' })
+    res.json({ background: 'black' })
     })
 
 const PORT = process.env.PORT || 8080;
