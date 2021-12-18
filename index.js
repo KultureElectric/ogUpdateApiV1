@@ -13,3 +13,5 @@ app.get('/location/:id', (req, res) => {
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log('Connected to: ', PORT));
+
+module.exports = app
